@@ -6,7 +6,7 @@ print ("Experiment take 1")
 print ("-------------------------------------------------------------")
 
 time.sleep(2)
-print("Choose from the following: ")
+print("Choose number from the following: ")
 print ("1.Plus")
 print ("2.Minus")
 print ("3.Multiply")
