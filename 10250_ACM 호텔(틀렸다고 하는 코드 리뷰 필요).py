@@ -13,6 +13,7 @@ for i in range(a):
 
 '''
 # 틀렸다고 나오는 코드
+# 반례:  1 1 1  ==>  답 101  ==>  출력 102
 a = int(input())
 for i in range(a):
     H, W, N = map(int, input().split())
