@@ -19,3 +19,11 @@ for i in word:  #baek
 
 for i in range(len(list(alphabet))):
     print(index[i], end = ' ')
+
+    
+    '''
+    #다른 사람의 풀이
+a = input()
+for x in range(97, 123):
+    print(a.find(chr(x)), end=" ")
+    '''
