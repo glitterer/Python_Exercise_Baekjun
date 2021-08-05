@@ -2,14 +2,14 @@ word = input().lower()      # word = mississipi / baaa
 words = list(set(word)) # set를 통해서 중복 없애기 ==> word_list = ['m', 'i', 's', 'p'] / ['b', 'a']
 cnt = []
 
-for i in word_list:         # i = m, i, s, p / b, a
+for i in words:         # i = m, i, s, p / b, a
     count = word.count(i)
     cnt.append(count)       # cnt = [4, 4, 1, 1] / [1, 3]
 
 if cnt.count(max(cnt)) >= 2:
     print("?")
 else:
-    print(words[(cnt.index(max(cnt)))].lower())
+    print(words[(cnt.index(max(cnt)))].upper())
 
 
 
