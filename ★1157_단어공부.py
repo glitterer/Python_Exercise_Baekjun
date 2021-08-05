@@ -3,7 +3,7 @@ words = list(set(word)) # set를 통해서 중복 없애기 ==> word_list = ['m'
 cnt = []
 
 for i in words:         # i = m, i, s, p / b, a
-    count = word.count(i)
+    count = word.count(i)  # count()를 통해서 set의 원소의 갯수를 센다.
     cnt.append(count)       # cnt = [4, 4, 1, 1] / [1, 3]
 
 if cnt.count(max(cnt)) >= 2:
