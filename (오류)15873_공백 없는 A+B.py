@@ -1,10 +1,9 @@
-# 틀린 이유: B<=10이라는 조건이 있는데, 이에 맞게 출력이 되지 않는다.
-num = list(map(int, input()))
-a = []
-b = []
-for i in range(len(num)):
-    if i != (len(num)-1):
-        a.append(str(num[i]))
+num = input()
+# print(num[len(num)-2:len(num)])
+if int(num[len(num)-2:len(num)]) <= 10:
+    if num[len(num)-2:len(num)-1] == '0':
+        print(int(num[0:len(num)-2])*10+ int(num[len(num)-1:len(num)]))
     else:
-        b.append(str(num[i]))
-print(int("".join(a))+int("".join(b)))
+        print(int(num[0:len(num)-2]) + int(num[len(num)-2:len(num)]))
+else:
+    print(int(num[0:len(num)-1]) + int(num[len(num)-1:len(num)]))
