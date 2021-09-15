@@ -1,10 +1,19 @@
 arr = []
-maxN = []
+maxN = [0]
+ind = []
 for i in range(9):
     arr.append(list(map(int, input().split())))
 for i in range(9):
-    maxN.append(max(arr[i]))
-print(max(maxN))
+    for j in range(9):
+        if max(arr[i]) == arr[i][j] and max(arr[i])>=maxN[0]:
+            maxN.pop()
+            maxN.append(arr[i][j])
+            i_num = i
+            j_num = j
+        else:
+            pass
+print(maxN[0])
+print(i_num+1, j_num+1)
 
 
 '''
