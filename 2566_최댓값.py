@@ -1,8 +1,9 @@
+import sys
 arr = []
 maxN = [0]
 ind = []
 for i in range(9):
-    arr.append(list(map(int, input().split())))
+    arr.append(list(map(int, sys.stdin.readline().split())))
 for i in range(9):
     for j in range(9):
         if max(arr[i]) == arr[i][j] and max(arr[i])>=maxN[0]:
